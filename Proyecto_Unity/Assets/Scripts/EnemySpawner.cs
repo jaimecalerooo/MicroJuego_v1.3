@@ -22,7 +22,6 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        // Instanciamos enemigos sólo si ha pasado tiempo suficiente desde el último (Slide 11)
         if (Time.time > spawnNext)
         {
             // Indicamos cuándo podremos volver a instanciar otro enemigo

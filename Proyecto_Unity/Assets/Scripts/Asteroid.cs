@@ -100,7 +100,6 @@ public class Asteroid : MonoBehaviour
             }
             else
             {
-                // Fallback de seguridad: si no hay un prefab en el pool o en el inspector, reduce este objeto a la mitad.
                 fragment = Instantiate(gameObject, position, Quaternion.identity);
                 fragment.transform.localScale = transform.localScale * 0.5f;
             }

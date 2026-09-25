@@ -11,8 +11,6 @@ public class Bullet : MonoBehaviour
 
     void Awake()
     {
-        // Fuerza la inyección de un Rigidbody cinemático si Unity no detecta físicas,
-        // lo que soluciona que OnTriggerEnter falle silenciosamente.
         if (GetComponent<Collider>() != null && GetComponent<Rigidbody>() == null)
         {
             Rigidbody rb = gameObject.AddComponent<Rigidbody>();
@@ -54,7 +52,6 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    // Cobertura total para evitar fallos por mala configuración en el Inspector
     private void OnTriggerEnter(Collider other) { CheckHit(other.gameObject); }
     private void OnTriggerEnter2D(Collider2D other) { CheckHit(other.gameObject); }
     private void OnCollisionEnter(Collision collision) { CheckHit(collision.gameObject); }

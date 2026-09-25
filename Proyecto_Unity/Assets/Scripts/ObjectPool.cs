@@ -2,9 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Patrón de diseño Object Pooling (Iteración 2 - Slides 15 y 16)
-/// Evita llamadas recurrentes a Instantiate y Destroy durante el bucle de juego,
-/// optimizando el uso de memoria y eliminando pausas por Garbage Collection.
+/// Reutiliza objetos durante la partida y reduce la creación y destrucción repetida.
 /// </summary>
 public class ObjectPool : MonoBehaviour
 {

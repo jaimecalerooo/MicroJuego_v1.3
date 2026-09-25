@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        // 2 opciones para pausar/reanudar: Presionando Escape (Slide 14) o Botón en la interfaz
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Cancel"))
         {
             if (!IsGameOver)

@@ -35,7 +35,6 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        // Si no se asignó por inspector, buscar texto con Tag "UI" según diapositiva 13
         if (scoreText == null)
         {
             GameObject uiGo = GameObject.FindGameObjectWithTag("UI");

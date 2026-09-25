@@ -60,7 +60,6 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Obtenemos las pulsaciones de teclado con fallback a Horizontal/Vertical
         float rawRotation = 0f;
         float rawThrust = 0f;
 
@@ -173,7 +172,6 @@ public class Player : MonoBehaviour
         }
         else
         {
-            // Reiniciar la escena directamente como indica la diapositiva 11
             SCORE = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
