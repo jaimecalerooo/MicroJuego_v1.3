@@ -36,7 +36,7 @@ MicroJuego_v1.3/
 │   ├── Packages/
 │   └── ProjectSettings/
 ├── Documentacion/
-│   └── gdd_jaimecalero_V1.2.pdf
+│   └── gdd_jaimecalero_V1.3.pdf
 └── Demo/
     └── Asteroids Microjuego.exe
 ```
